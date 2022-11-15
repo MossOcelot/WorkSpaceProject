@@ -1,0 +1,49 @@
+.dashmails {
+    background-color: white;
+    width: 80%;
+    min-width: 320px;
+    max-height: 390px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px #E0E7E9;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+.topdash {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.icons {
+    color: #354649;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 930px) {
+    .dashmails {
+        background-color: white;
+        width: 0;
+        min-width: 0;
+        max-height: 0;
+        border-radius: 0;
+        box-shadow: none;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    
+    .topdash {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    .icons {
+        color: #354649;
+        font-size: 0;
+        margin-left: 0;
+    }
+}

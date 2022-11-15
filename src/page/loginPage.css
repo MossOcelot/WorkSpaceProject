@@ -1,0 +1,135 @@
+.LoginPage {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #A3C6C4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 864px;
+    height: 458px;
+    background-color: #E0E7E9;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro-LoginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 76px;
+}
+
+.intro-LoginPage h1 {
+    font-size: 36px;
+    color: #354649;
+   
+}
+
+.intro-LoginPage p {
+    font-size: 14px;
+    color: #7C8082;
+}
+
+.loginPageButton {
+    margin-top: 14px;
+    margin-left: 17px;
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    color: #354649;
+    background-color: #E0E7E9;
+    font-size: 13px;
+    border: 1px solid #6C7A89;
+    cursor: pointer;
+}
+
+.loginPageButton:hover,.loginPageButton:active {
+    color: white;
+    background-color: #354649;
+}
+
+.fromLoginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 76px;
+}
+
+.fromLoginPage h2 {
+    color: #354649;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 21px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    width: 258px;
+    height: 33px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    padding: 0 14px 0 14px;
+    margin-bottom: 14px;
+}
+
+.box .icon {
+    font-size: 20px;
+    color: #354649;
+    margin-right: 14px;
+}
+
+.box input {
+    border: none;
+    color: #354649;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.noti {
+    font-size: 14px;
+    color: #EB5757;
+    text-align: center;
+}
+
+.box input:focus, input:focus {
+    outline: none;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.submitbutton {
+    color: white;
+    font-size: 13px;
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #354649;
+    margin-top: 40px;
+}
+
+.submitbutton:hover ,.submitbutton:active {
+    background-color: rgba(53,70,73 ,0.8);
+    cursor: pointer;
+}
+
+.submit p{
+    color: #7C8082;
+    font-size: 11px;
+}
+
+.submit p:hover,p:active{
+    cursor: pointer;
+}

@@ -1,0 +1,198 @@
+.dashworks {
+    background-color: white;
+    width: 80%;
+    min-width: 320px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px #E0E7E9;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.topdashworks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.topdashworks h1 {
+    color: #354649;
+    font-size: 16px;
+}
+
+.boarddash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #A3C6C4;
+}
+
+.boarddash p {
+    color: white;
+    font-size: 11px;
+}
+
+.maindashworks {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.outmain {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+}
+
+.inmain {
+    position: relative;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: white;
+    color: #354649;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footdashworks {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 40px;
+}
+
+.footcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numworks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.footcard .p {
+    color: #354649;
+    font-size: 13px;
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 930px) {
+    .dashworks {
+        background-color: none;
+        width: 0;
+        min-width: 0;
+        border-radius: 0;
+        box-shadow: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+
+
+    .topdashworks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .topdashworks h1 {
+        color: #354649;
+        font-size: 0;
+    }
+
+    .boarddash {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        background-color: #A3C6C4;
+    }
+
+    .boarddash p {
+        color: white;
+        font-size: 0;
+    }
+
+    .maindashworks {
+        display: flex;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .outmain {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        background-color: #C4C4C4;
+    }
+
+    .inmain {
+        position: relative;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        background-color: white;
+        color: #354649;
+        font-size: 0;
+        font-weight: bold;
+    }
+
+    .footdashworks {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 0;
+    }
+
+    .footcard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .numworks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0;
+        width: 0;
+        height: 0;
+        color: white;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .footcard .p {
+        color: #354649;
+        font-size: 0;
+        margin-left: 0;
+    }
+}

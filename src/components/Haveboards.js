@@ -7,12 +7,13 @@ import { collection, getDocs, limit, orderBy, query, where } from 'firebase/fire
 import { db } from '../config'
 import React, { useState, useEffect, useContext } from 'react'
 import { AuthContext } from './Auth'
-
+import Create_board from '../modal/create_board.js'
 const Haveboards = () => {
 
     const authdata = useContext(AuthContext)
     const [myboards, setMyboards] = useState([])
     const [myjoinboards, setMyjoinboards] = useState([])
+    const [showModal, setShowModal] = useState(false)
     const mycollectionRef = collection(db, 'users', authdata.currentUser.uid, 'MyBoards')
 
     const getmyproject = () => {
@@ -56,7 +57,8 @@ const Haveboards = () => {
                             </React.Fragment>
                         ))
                     }
-                    <Boardcreate click={getmyproject} />
+                    <Boardcreate click={()=>setShowModal(true)} />
+                    {showModal && <Create_board close={setShowModal}/>}
                 </div>
             </div>
             <div className="contain">

@@ -1,0 +1,43 @@
+.Hboard {
+    display: flex;
+    flex-direction: column;
+    width: 89vw;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.contain {
+    width: 90%;
+}
+
+.titlemyboards {
+    border-bottom: 1px solid #354649;
+}
+
+.titlemyjoinboards {
+    border-bottom: 1px solid #354649;
+}
+
+.Hboard h3{
+    color: #354649;
+    font-size: 20px;
+    margin: 10px;
+    
+}
+
+.homeboard:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+@media screen and (max-width: 1110px) {
+    .Hboard {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-right: 0%;
+    }
+    
+}

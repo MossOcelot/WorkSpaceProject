@@ -1,5 +1,5 @@
 import React ,{ useState, useEffect } from 'react'
-import firebaseConfig from "../config";
+import {app} from "../config";
 
 // ตรวจสอบว่า user ทำการ Auth มารึป่าว
 export const AuthContext = React.createContext()
@@ -10,7 +10,7 @@ export const AuthProvider = ({children}) => {
 
     useEffect(()=>{
        
-        firebaseConfig.auth().onAuthStateChanged((user)=>{
+        app.auth().onAuthStateChanged((user)=>{
             console.log(user)
             setCurrentUser(user)
             setLoading(false)

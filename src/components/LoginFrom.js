@@ -1,6 +1,6 @@
 import { BsFillPersonFill,BsFillLockFill } from "react-icons/bs";
 import React , { useState ,useContext } from "react";
-import firebaseConfig from "../config";
+import { app } from "../config";
 import {AuthContext} from './Auth'
 import {Navigate } from 'react-router-dom'
 
@@ -19,7 +19,7 @@ const LoginFrom=(props)=>{
     const commitInput =(event)=>{
         event.preventDefault()
         try {
-            firebaseConfig.auth().signInWithEmailAndPassword(email,password)
+            app.auth().signInWithEmailAndPassword(email,password)
             
         } catch(error){
             alert(error)
@@ -33,7 +33,7 @@ const LoginFrom=(props)=>{
     console.log(currentUser)
 
     if (currentUser){
-        return <Navigate  to="/DashBoard"/>
+        return <Navigate  to="/Main"/>
     }
 
     return (

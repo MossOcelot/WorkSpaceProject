@@ -12,7 +12,7 @@ const Mailcard=()=>{
                     <p>อ. 31 ส.ค. 2564</p>
                 </div>
             </div>
-            <div className="detail">
+            <div className="detail-text">
                 <p>โปรดส่งงานภายในวันนี้ ตอน 14.30 น.</p>
             </div>
         </div>

@@ -1,0 +1,29 @@
+.cboard {
+    float: left;
+    margin: 20px;
+    width: 250px;
+    border: 2px dashed #354649;
+    border-radius: 10px;
+    color: #354649;
+    
+}
+
+.cboard:hover, .cboard:active {
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white;
+    transition: background-color 0.5s,color 0.5s;
+    cursor: pointer;
+}
+
+.create-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 150px;
+    font-size: 40px;
+}
+
+.addicon {
+    font-size: 40px;
+}

@@ -1,0 +1,19 @@
+.iboard {
+    float: left;
+    margin: 20px;
+    width: 250px;
+}
+
+.icon-board {
+    width: 250px;
+    height: 150px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #E0E7E9;
+}
+
+p {
+    color: #354649;
+    font-size: 18px;
+    text-align: center;
+}

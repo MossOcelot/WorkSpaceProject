@@ -116,12 +116,12 @@
     height: 35px;
     border-radius: 20px;
     border: none;
-    background-color: #354649;
+    background-color: rgba(53,70,73 ,0.8);
     margin-top: 40px;
 }
 
 .submitbutton:hover ,.submitbutton:active {
-    background-color: rgba(53,70,73 ,0.8);
+    background-color: #354649;
     cursor: pointer;
 }
 

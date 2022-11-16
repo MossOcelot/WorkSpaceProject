@@ -1,0 +1,59 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-board {
+    font-size: 80px;
+    color: #354649;
+    margin-bottom: 30px;
+}
+
+.board h1 {
+    font-size: 36px;
+    color: #A3C6C4;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.board .button-board{
+    display: flex;
+    margin-top: 30px;
+}
+
+.board button {
+    width: 131px;
+    height: 41px;
+    border-radius: 5px;
+    color: #354649;
+    font-size: 18px;
+    background-color: #A3C6C4;
+    border: none;
+}
+
+.board button:hover ,button:active {
+    color: white;
+    background-color: #354649;
+    cursor: pointer;
+}
+
+.spacebutton {
+    width: 40px;
+}
+@media screen and (max-width: 1110px) {
+    .board {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        padding-right: 0%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

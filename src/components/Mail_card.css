@@ -31,10 +31,11 @@
     color: #7C8082;
 }
 
-.detail{
+.detail-text p{
     color: #354649;
     font-size: 11px;
     margin-top: 5px;
+    text-align: start;
 }
 
 @media screen and (max-width: 930px) {

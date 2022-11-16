@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { AuthContext  } from '../components/Auth'
-import DashBoard from './DashBoard'
+import Main from './main'
 import LoginPage from './loginPage'
 
 
@@ -11,7 +11,7 @@ const HomePage =()=>{
     return (
         <div>
             {
-                currentUser ? <DashBoard/> : <LoginPage/>
+                currentUser ? <Main/> : <LoginPage/>
             }
         </div>
     )

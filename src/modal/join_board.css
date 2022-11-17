@@ -1,0 +1,85 @@
+.modals {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(224, 224, 224, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.modal__containers {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    border-radius: 0.4rem;
+    box-shadow: 0 1px 10px #999;
+    padding: 30px;
+    margin-top: 5%;
+}
+
+
+.exit {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    padding: 30px;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.jointitle h1 {
+    color: #354649;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.jointitle p {
+    color: #A3C6C4;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.joincode {
+    display: flex;
+    margin-top: 50px;
+}
+
+.joincode .codeinput {
+    background-color: #A3C6C4;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: #354649;
+    font-size: 16px;
+    text-align: center;
+}
+
+.joincode .joinbutton {
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    color: #354649;
+    font-size: 16px;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.joincode .joinbutton:hover , .joinbutton:active {
+    color: white;
+    background-color: #354649;
+}
+
+.alertpjoin {
+    color: red;
+    font-size: 14px;
+}

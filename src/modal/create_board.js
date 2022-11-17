@@ -5,7 +5,9 @@ import { db } from '../config'
 import { MdClear } from "react-icons/md"
 import { useState, useContext } from 'react'
 import { AuthContext } from '../components/Auth'
-import { collection, addDoc,doc } from 'firebase/firestore'
+import { collection, addDoc } from 'firebase/firestore'
+
+import {v4 as uuid} from 'uuid'
 const Createboard = (props) => {
     
     const authdata = useContext(AuthContext)
@@ -35,11 +37,13 @@ const Createboard = (props) => {
     
     const generate_board =()=> {
         const boardsColllectionRef = collection(db, "boards")
+        const code = uuid().slice(0,8)
         addDoc(boardsColllectionRef,{
             boardname: boardname,
             createby: authdata.currentUser.uid,
             member: putmember,
-            createDate: new Date()
+            createDate: new Date(),
+            code: code
         }).then(data=>{
             console.log(data.id)
             const myboardCollectionRef = collection(db, "users", authdata.currentUser.uid, 'MyBoards')
@@ -47,7 +51,8 @@ const Createboard = (props) => {
                 uidBoard: data.id,
                 createby: authdata.currentUser.uid,
                 nameBoard: boardname,
-                createDate: new Date()
+                createDate: new Date(),
+                code: code
             })
         })
         props.close(false)

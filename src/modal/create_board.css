@@ -2,18 +2,119 @@
     position: fixed;
     top:0;
     left:0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(224, 224, 224, 0.4);
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
 .modal__container {
     background-color: white;
     min-width: 600px;
-    width: 100%;
+    width: 50%;
     border-radius: 0.4rem;
     box-shadow: 0 1px 10px #999;
+    padding: 30px;
 }
+
+.modal__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__title h1 {
+    color: #354649;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.modal__title p {
+    color: #A3C6C4;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.modal__content p{
+    color: #354649;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.addmember {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputnameboard {
+    border: none;
+    background-color: #A3C6C4;
+    width: 30%;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 20px 0 20px;
+    color: #354649;
+    font-size: 18px;
+}
+
+.inputmember {
+    border: none;
+    background-color: #A3C6C4;
+    width: 30%;
+    min-width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0 20px 0 20px;
+    font-size: 18px;
+    color: #354649;
+}
+
+.addmember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 30%;
+    min-width: 200px;
+    height: 30px;
+    background-color: rgba(163, 198, 196, 0.5);
+    color: #354649;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.addmember:hover ,.addmember:active {
+    color: white;
+    background-color: #354649;
+    cursor: pointer;
+}
+
+.modal__footer .btn {
+    background-color: rgb(224, 224, 224);
+    color: #354649;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+    min-width: 200px;
+    height: 40px;
+    border: none;
+}
+
+.modal__footer .btn:hover,.btn:active {
+    background-color: #354649;
+    color: white;
+}
+
+.clearicon {
+    color: #354649;
+    font-size: 24px;
+    cursor: pointer;
+}
+

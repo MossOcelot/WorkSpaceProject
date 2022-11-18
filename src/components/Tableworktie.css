@@ -1,0 +1,112 @@
+
+.titletable {
+    display: flex;
+    width: 90%;
+    height: 45px;
+    margin-top: 40px;
+}
+
+.tagtable {
+    width: 0.8%;
+    height: 45px;
+    background-color: #EB5757;
+}
+
+.nametable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 45px;
+    padding: 0 20px 0 20px;
+}
+
+.nametable p {
+    font-size: 18px;
+    color: #354649;
+}
+
+.nametable .changeName {
+    font-size: 24px;
+    color: #354649;
+}
+
+.responsibletable{
+    display: flex;
+    width: 14.5%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsibletable p {
+    color: #354649;
+    font-size: 18px;
+}
+
+.scoretable{
+    display: flex;
+    width: 11.6%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoretable p {
+    color: #354649;
+    font-size: 18px;
+}
+
+.statustable{
+    display: flex;
+    width: 9.8%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.statustable p {
+    color: #354649;
+    font-size: 18px;
+}
+
+.timetable {
+    display: flex;
+    width: 11.6%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.timetable p {
+    color: #354649;
+    font-size: 18px;
+}
+
+.processtable{
+    display: flex;
+    width: 16.7%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+.processtable p {
+    color: #354649;
+    font-size: 18px;
+}
+
+.deletebin {
+    color: #354649;
+    font-size: 24px;
+}
+
+
+

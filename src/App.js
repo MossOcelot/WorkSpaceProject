@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import LoginPage from './page/loginPage'
 import Main from './page/main'
 import HomePage from './page/HomePage'
+
 import { AuthProvider } from './components/Auth'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route exact path='/' element={<HomePage/>}></Route>
           <Route exact path='/LoginPage' element={<LoginPage/>}></Route>
           <Route exact path='/Main' element={<Main/>}></Route>
+          
         </Routes>
       </Router>
     </AuthProvider>

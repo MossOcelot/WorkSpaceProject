@@ -2,7 +2,10 @@
     float: left;
     margin: 20px;
     width: 250px;
+    cursor: pointer;
 }
+
+
 
 .icon-board {
     width: 250px;

@@ -10,6 +10,8 @@ import { AuthContext } from './Auth'
 import Createboard from '../modal/create_board.js'
 import JoinBoards from '../modal/join_board'
 import Boardjoin from './Boardjoin'
+import {Navigate } from 'react-router-dom'
+import BoardPage from '../page/BoardPage'
 
 const Haveboards = () => {
 
@@ -18,6 +20,7 @@ const Haveboards = () => {
     const [myjoinboards, setMyjoinboards] = useState([])
     const [showModalcreate, setShowModalcreate] = useState(false)
     const [showModaljoin, setShowModaljoin] = useState(false)
+    const [showBoard, setShowBoard] = useState(false)
 
     const mycollectionRef = collection(db, 'users', authdata.currentUser.uid, 'MyBoards')
 
@@ -46,7 +49,12 @@ const Haveboards = () => {
     useEffect(() => {
         getmyproject()
         getmyjoinproject()
+        console.log(showModalcreate);
     }, [])
+
+    if (showBoard) {
+        return <BoardPage click={()=>setShowBoard(false)}/>
+    }
 
     return (
         <div className="Hboard">
@@ -58,7 +66,7 @@ const Haveboards = () => {
                     {
                         myboards.map(boards => (
                             <React.Fragment key={boards.data.uidBoard}>
-                                <Boardicons title={boards.data.nameBoard} />
+                                <Boardicons click={()=>setShowBoard(true)} title={boards.data.nameBoard} />
                             </React.Fragment>
                         ))
                     }

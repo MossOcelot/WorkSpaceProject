@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import { AuthContext } from '../components/Auth'
-import {app} from '../config'
+import { app } from '../config'
 
 import './main.css'
 import { BsPersonCircle } from "react-icons/bs"
@@ -11,28 +11,28 @@ import Boards from '../components/Boards'
 
 const Main = () => {
     const { currentUser } = useContext(AuthContext)
-    const [page,setpage] = useState("Home")
+    const [page, setpage] = useState("Home")
 
     if (!currentUser) {
         return <Navigate to="/loginPage" />
     }
-    
+
     const nextpage = (value) => {
         setpage(value)
-        
+
     }
 
-    const Switch_Page =(page)=> {
-        
+    const Switch_Page = (page) => {
+
         switch (page) {
             case "Home":
-                return <Home/>
-               
+                return <Home />
+
             case "Boards":
-                return <Boards/>
-                
+                return <Boards />
+
             default:
-                return <Home/>
+                return <Home />
         }
     }
 
@@ -41,12 +41,15 @@ const Main = () => {
 
             <div className="nav">
                 <h1>WorkSpace</h1>
-                <BsPersonCircle className='icon-nav' onClick={() => app.auth().signOut()} />
+                <div className="profilenav">
+                    <p>{currentUser.email}</p>
+                    <BsPersonCircle className='icon-nav' onClick={() => app.auth().signOut()} />
+                </div>
             </div>
 
             <div className="main">
                 <div className="first">
-                    <Leftbar updatepage={nextpage}/>
+                    <Leftbar updatepage={nextpage} />
                 </div>
                 {
                     Switch_Page(page)

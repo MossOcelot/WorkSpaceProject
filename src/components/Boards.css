@@ -45,6 +45,7 @@
 .spacebutton {
     width: 40px;
 }
+
 @media screen and (max-width: 1110px) {
     .board {
         display: flex;

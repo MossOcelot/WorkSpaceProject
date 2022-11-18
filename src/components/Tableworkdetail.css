@@ -1,0 +1,137 @@
+
+
+.titletables {
+    display: flex;
+    width: 90%;
+    height: 45px;
+}
+
+.tagtables {
+    width: 0.8%;
+    height: 45px;
+    background-color: #EB5757;
+    border-top: 2px solid white;
+}
+
+.nametables {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 45px;
+    padding: 0 20px 0 20px;
+    background-color: #E0E7E9;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.nametables p {
+    font-size: 18px;
+    color: #354649;
+}
+
+.nametables .changeNames {
+    font-size: 24px;
+    color: #354649;
+}
+
+.responsibletables {
+    display: flex;
+    width: 14.5%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E7E9;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    color: #354649;
+    font-size: 24px;
+}
+
+
+.scoretables {
+    display: flex;
+    width: 11.6%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E7E9;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    color: #354649;
+    font-size: 24px;
+}
+
+
+.statustables {
+    display: flex;
+    width: 9.8%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E7E9;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.statustables .newstatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F80ED;
+    width: 100%;
+    height: 30px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.statustables .newstatus p {
+    color: white;
+    font-size: 13px;
+}
+
+.timetables {
+    display: flex;
+    width: 11.6%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E7E9;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.timetables p {
+    color: #354649;
+    font-size: 18px;
+}
+
+.processtables {
+    display: flex;
+    width: 16.7%;
+    height: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E0E7E9;
+    border-top: 2px solid white;
+    padding: 0 20px 0 20px;
+}
+
+.processtables .processbox {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #354649;
+}
+
+.processtables p {
+    color: #354649;
+    font-size: 18px;
+}
+

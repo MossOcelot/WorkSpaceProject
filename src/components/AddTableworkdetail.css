@@ -1,0 +1,35 @@
+.titletable_add {
+    display: flex;
+    width: 90%;
+    height: 45px;
+    cursor: pointer;
+}
+
+.tagtable_add {
+    width: 0.8%;
+    height: 45px;
+    background-color: rgba(235, 87, 87, 0.5);
+    border-top: 2px solid white;
+}
+
+.addtable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 89.2%;
+    height: 45px;
+    padding: 0 20px 0 20px;
+    background-color: rgba(224,231,233,0.5);
+    border-top: 2px solid white;
+}
+
+.addtable .addicontable {
+    color: #354649;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.addtable p {
+    color: #354649;
+    font-size: 14px;
+}

@@ -1,0 +1,151 @@
+.Boardpage {
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: auto;
+}
+
+.navboard {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    background-color: #A3C6C4;
+}
+
+
+
+.titlnavboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titlnavboard .picboard {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #354649;
+    margin-right: 20px;
+}
+
+.detailboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailboard .nameboard h1 {
+    color: #354649;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.detailboard ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.detailboard ul li {
+    margin-right: 10px;
+}
+
+.detailboard ul li a {
+    color: #6C7A89;
+    font-size: 15px;
+    text-decoration: none; 
+}
+
+.detailboard ul li a:hover,a:active {
+    color: #354649;
+    text-decoration: underline #354649;
+}
+
+.rightnavboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rightnavboard .memberbox {
+    width: 75px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #354649;
+}
+
+.rightnavboard .iconmemberbox{
+    color: white;
+    font-size: 22px;
+}
+
+.rightnavboard .memberbox {
+    margin-right: 20px;
+}
+
+.rightnavboard .memberbox p {
+    color: white;
+    font-size: 18px;
+    
+}
+
+.rightnavboard .meeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 103px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #354649;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.exitboard {
+    color: #354649;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mainBoard {
+    margin-top: 80px;
+    padding: 40px;
+}
+
+.mainBoard .topmaintboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.mainBoard .topmaintboard .createtablework {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #354649;
+    color: white;
+    font-size: 18px;
+}
+
+/* tableBoard */
+.tablework {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    align-items: center;
+}
+

@@ -45,11 +45,6 @@
     margin-bottom: 5px;
 }
 
-.addmember {
-    display: flex;
-    flex-direction: column;
-}
-
 .inputnameboard {
     border: none;
     background-color: #A3C6C4;

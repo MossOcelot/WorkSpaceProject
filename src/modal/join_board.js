@@ -1,6 +1,6 @@
 import './join_board.css'
 
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { AuthContext } from '../components/Auth'
 import { addDoc, collection, getDocs, query, updateDoc, where, doc, arrayUnion } from 'firebase/firestore'
 import { db } from '../config'
@@ -10,34 +10,36 @@ const JoinBoards = (props) => {
     const authdata = useContext(AuthContext)
     const [statuscode, setStatusCode] = useState(false)
     const [codeboard, setCodeBoard] = useState('')
-    const [checkmember, setcheckmember] = useState(false)
     const [statusmember, setstatusmember] = useState(false)
 
     const getcodeboard = (e) => {
         setCodeBoard(e.target.value)
     }
 
+
     const  joinBoardnow = async () => {
+        
         const codeBoardRef = collection(db, 'boards')
         getDocs(query(codeBoardRef, where("code", "==", codeboard))).then(status => {
             const fine = status.docs.length
             if (fine === 0) {
-                setStatusCode(true)
+            setStatusCode(true)
             } else {
                 
                 // มีปัญหาเรื่อง async await
-                
+                var check = false
+
                 for ( let i = 0; i < status.docs[0].data().member.length; i++) {
                     if ( status.docs[0].data().member[i].email === authdata.currentUser.email) {
-                        console.log("have");
-                        setcheckmember(true)
+                        check = true
                         break
-                    }
+                    } 
+
                 }
 
-                const myboardCollectionRef = collection(db, "users", authdata.currentUser.uid, 'MyBoards')
-                console.log(checkmember);
-                if (!checkmember) {
+                const myboardCollectionRef =  collection(db, "users", authdata.currentUser.uid, 'MyBoards')
+                
+                if (!check) {
                     addDoc(myboardCollectionRef, {
                         uidBoard: status.docs[0].id,
                         createby: status.docs[0].data().createby,
@@ -48,6 +50,7 @@ const JoinBoards = (props) => {
                     updateDoc(doc(db, 'boards', status.docs[0].id), {
                         member: arrayUnion({ email: authdata.currentUser.email })
                     })
+
                 } else {
                     setstatusmember(true)
                 }

@@ -1,4 +1,4 @@
-import './create_board.css'
+import './createboard.css'
 
 import { db } from '../config'
 
@@ -8,6 +8,7 @@ import { AuthContext } from '../components/Auth'
 import { collection, addDoc } from 'firebase/firestore'
 
 import {v4 as uuid} from 'uuid'
+
 const Createboard = (props) => {
     
     const authdata = useContext(AuthContext)
